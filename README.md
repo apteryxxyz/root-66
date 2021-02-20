@@ -98,5 +98,5 @@ Information about the file that required this module.
 [license-image]: https://img.shields.io/npm/l/root-66?logo=github
 
 [npm-url]: https://npmjs.com/package/root-66
-[license-url]: https://github.com/apteryxxyz/root-66/blob/master/LICENSE
+[license-url]: https://github.com/apteryxxyz/root-66/blob/main/LICENSE
 [github-url]: https://github.com/apteryxxyz/root-66/
