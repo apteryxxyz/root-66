@@ -1,7 +1,7 @@
 {
-    "name": "sixty-six",
-    "version": "0.0.0",
-    "description": "Sixty Six is a simple, zero dependencies node module made to help you find the root of your project, plus other path related features.",
+    "name": "root-66",
+    "version": "0.0.1",
+    "description": "Root 66 is a simple, zero dependencies node module made to help you find the root of your project, plus other path related features.",
     "author": {
         "name": "Apteryx",
         "email": "apteryx.xyz@gmail.com",
@@ -9,19 +9,19 @@
     },
     "main": "src/index.js",
     "license": "MIT",
-    "homepage": "https://www.apteryx.xyz/npm/sixty-six",
+    "homepage": "https://www.apteryx.xyz/npm/root-66",
     "changelog": {
-        "url": "https://github.com/apteryxxyz/sixty-six/blob/CHANGELOG.md"
+        "url": "https://github.com/apteryxxyz/root-66/blob/CHANGELOG.md"
     },
     "bugs": {
-        "url": "https://github.com/apteryxxyz/sixty-six/issues"
+        "url": "https://github.com/apteryxxyz/root-66/issues"
     },
     "scripts": {
         "test": "mocha"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/apteryxxyz/sixty-six.git"
+        "url": "git+https://github.com/apteryxxyz/root-66.git"
     },
     "bundledDependencies": [],
     "deprecated": false,
