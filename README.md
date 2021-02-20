@@ -1,8 +1,8 @@
-# Sixty Six
+# Root 66
 
 [![Version][version-image]][github-url][![Downloads][downloads-image]][npm-url][![JavaScript][javascript-image]][github-url][![License][license-image]][license-url]
 
-- [**Homepage**](https://www.apteryx.xyz/npm/sixty-six)
+- [**Homepage**](https://www.apteryx.xyz/npm/root-66)
 
 ## Table Of Contents
 
@@ -12,25 +12,25 @@
 
 ## About
 
-Sixty Six is a node module made to make it easier to find/know the root directory of your node app.<br>
+Root 66 is a node module made to make it easier to find/know the root directory of your node app.<br>
 The name is a kind of play on words of Route 66.
 
-The module will find the root of the app and set it to the 'process.env' variable as 'SIXTY_SIX_ROOT', so once required from any file, you'll be able to access the value from anywhere. When requiring the file it will also return an object containing more information, explained below.
+The module will find the root of the app and set it to the 'process.env' variable as 'ROOT_SIXTY_SIX', so once required from any file, you'll be able to access the value from anywhere. When requiring the file it will also return an object containing more information, explained below.
 
 ## Installation
 
-```npm install sixty-six```
+```npm install root-66```
 
 ## Test
 
-```cd ./node_modules/sixty-six && npm test```
+```cd ./node_modules/root-66 && npm test```
 
 ## Usage
 
 ```js
-const sixty = require('sixty-six');
+const sixty = require('root-66');
 
-process.env.SIXTY_SIX_ROOT;
+process.env.ROOT_SIXTY_SIX;
 // /home/Apteryx/node/project
 
 sixty.root;
@@ -92,11 +92,11 @@ Information about the file that required this module.
     The module exports of the current file.
 
 
-[version-image]: https://img.shields.io/github/package-json/v/apteryxxyz/sixty-six?logo=github
-[downloads-image]: https://img.shields.io/npm/dt/sixty-six?logo=npm
-[javascript-image]: https://img.shields.io/github/languages/top/apteryxxyz/sixty-six?logo=github
-[license-image]: https://img.shields.io/npm/l/sixty-six?logo=github
+[version-image]: https://img.shields.io/github/package-json/v/apteryxxyz/root-66?logo=github
+[downloads-image]: https://img.shields.io/npm/dt/root-66?logo=npm
+[javascript-image]: https://img.shields.io/github/languages/top/apteryxxyz/root-66?logo=github
+[license-image]: https://img.shields.io/npm/l/root-66?logo=github
 
-[npm-url]: https://npmjs.com/package/sixty-six
-[license-url]: https://github.com/apteryxxyz/sixty-six/blob/master/LICENSE
-[github-url]: https://github.com/apteryxxyz/sixty-six/
+[npm-url]: https://npmjs.com/package/root-66
+[license-url]: https://github.com/apteryxxyz/root-66/blob/master/LICENSE
+[github-url]: https://github.com/apteryxxyz/root-66/
