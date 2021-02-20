@@ -1,3 +1,4 @@
+// tested on Windows 10 and Raspberry Pi 4
 const { _findPath: findPath } = require('module'),
     { resolve, join, sep, dirname } = require('path');
 
@@ -27,6 +28,7 @@ function findRoot() {
         final = final + mappedParts[i];
 
         // run the findPath function with the new final variable, if true and findPathRoot is false set new value
+        // im unsure as to how the findPath function works but after testing it, it has every time
         if (findPath(final) && !findPathRoot) findPathRoot = final;
     }
 
@@ -34,7 +36,7 @@ function findRoot() {
     // and nodeModulesPaths is equal to 2, AKA there is only one 'node_modules' in the path
     if (nodeModulesRoot !== dir && nodeModulesPaths.length === 2) return nodeModulesRoot;
 
-    // if findPathRoot is not true, return it
+    // if findPathRoot is not false, return it
     else if (findPathRoot !== false) return findPathRoot;
 
     // if all else fails, return working directory
