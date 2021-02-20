@@ -30,8 +30,6 @@ function findRoot() {
         if (findPath(final) && !findPathRoot) findPathRoot = final;
     }
 
-    //if 'node_modules' existed in the path and nodeModulesPaths length is 2, aka nodeModulesRoot is not the same as dir when return it
-
     // if nodeModulesRoot does not equal the current directory, AKA 'node_modules' exists in the directory
     // and nodeModulesPaths is equal to 2, AKA there is only one 'node_modules' in the path
     if (nodeModulesRoot !== dir && nodeModulesPaths.length === 2) return nodeModulesRoot;
