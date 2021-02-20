@@ -2,8 +2,8 @@ const { _findPath: findPath } = require('module'),
     { resolve, join, sep, dirname } = require('path');
 
 function findRoot() {
-    // if process.env.SIXTY_SIX_ROOT already exists, return it
-    if (process.env.SIXTY_SIX_ROOT) return process.env.SIXTY_SIX_ROOT;
+    // if process.env.ROOT_SIXTY_SIX already exists, return it
+    if (process.env.ROOT_SIXTY_SIX) return process.env.ROOT_SIXTY_SIX;
 
     // directory that this file belongs to
     const dir = dirname(module.filename);
@@ -45,7 +45,7 @@ function findRoot() {
 
 function findPackageJson() {
     // define root path, if no env variable run findRoot function
-    const root = process.env.SIXTY_SIX_ROOT || findRoot();
+    const root = process.env.ROOT_SIXTY_SIX || findRoot();
 
     // join root path with 'package.json', where the file should be
     const packagePath = join(root, 'package.json');
@@ -94,8 +94,8 @@ module.exports = new class SixtySix {
         // apply path sep to class
         this.sep = sep;
 
-        // apply root to process.env as SIXTY_SIX_ROOT
-        process.env.SIXTY_SIX_ROOT;
+        // apply root to process.env as ROOT_SIXTY_SIX
+        process.env.ROOT_SIXTY_SIX;
 
         // apply current working directory to class
         this.cwd = process.cwd();
