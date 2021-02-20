@@ -1,0 +1,10 @@
+node_modules/
+
+.github/
+.gitignore
+.gitattributes
+
+.editorconfig
+.travis.yml
+
+CHANGELOG.md
