@@ -104,8 +104,8 @@ module.exports = new class SixtySix {
         // apply package.json file content to class
         this.package = findPackageJson();
 
-        // assign this modules name, description and version to class
-        Object.assign(this, { name, description, version });
+        // apply this modules name, description and version to class
+        this.module = { name, description, version}
 
         // delete the require cache of this file
         delete require.cache[__filename];
