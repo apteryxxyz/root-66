@@ -3,6 +3,7 @@ const assert = require('assert');
 describe('SixtySix', function () {
     const sixty = require('..'),
         path = require('path'),
+        { name, description, version } = require('../package.json'),
         pathParts = module.filename.split(path.sep);
 
     describe('root', function () {
@@ -53,6 +54,12 @@ describe('SixtySix', function () {
             it('should return the module exports of the current file', function () {
                 assert(sixty.file.exports, module.exports);
             })
+        })
+    })
+
+    describe('module', function () {
+        it('should return an object containing this modules name, description and version', function () {
+            assert(sixty.module, { name, description, version })
         })
     })
 })
