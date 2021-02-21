@@ -1,7 +1,7 @@
 const assert = require('assert');
 
 describe('SixtySix', function () {
-    const sixty = require('../'),
+    const sixty = require('..'),
         path = require('path'),
         pathParts = module.filename.split(path.sep);
 
@@ -38,7 +38,7 @@ describe('SixtySix', function () {
         })
 
         describe('path', function () {
-            it('should return the complete path to the current file', function() {
+            it('should return the path to the current file', function () {
                 assert(sixty.file.path, pathParts.join(path.sep));
             })
         })
