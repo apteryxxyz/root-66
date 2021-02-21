@@ -57,7 +57,7 @@ declare const SixtySix: {
     }
 
     /**
-     * An object containing this modules name, description, and version
+     * An object containing this node packages name, description, and version
      */
     module: {
         /**
