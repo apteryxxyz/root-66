@@ -1,6 +1,7 @@
 // tested on Windows 10 and Raspberry Pi 4
 const { _findPath: findPath } = require('module'),
-    { resolve, join, sep, dirname } = require('path');
+    { resolve, join, sep, dirname } = require('path'),
+    { name, version, description } = require('../package.json')
 
 function findRoot() {
     // if process.env.ROOT_SIXTY_SIX already exists, return it
@@ -102,6 +103,9 @@ module.exports = new class SixtySix {
 
         // apply package.json file content to class
         this.package = findPackageJson();
+
+        // assign this modules name, description and version to class
+        Object.assign(this, { name, description, version });
 
         // delete the require cache of this file
         delete require.cache[__filename];
