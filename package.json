@@ -1,6 +1,6 @@
 {
     "name": "root-66",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Root 66 is a simple, zero dependencies node module made to help you find the root of your project, plus other path related features.",
     "author": {
         "name": "Apteryx",
