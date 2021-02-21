@@ -95,7 +95,7 @@ module.exports = new class SixtySix {
         this.sep = sep;
 
         // apply root to process.env as ROOT_SIXTY_SIX
-        process.env.ROOT_SIXTY_SIX;
+        process.env.ROOT_SIXTY_SIX = root;
 
         // apply current working directory to class
         this.cwd = process.cwd();
