@@ -58,7 +58,7 @@ describe('SixtySix', function () {
     })
 
     describe('module', function () {
-        it('should return an object containing this modules name, description and version', function () {
+        it('should return an object containing this node packages name, description and version', function () {
             assert(sixty.module, { name, description, version })
         })
     })
