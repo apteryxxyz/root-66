@@ -19,11 +19,23 @@ The module will find the root of the app and set it to the 'process.env' variabl
 
 ## Installation
 
-```npm install root-66```
+Stable:
+
+```bash
+npm install root-66
+```
+
+Latest:
+
+```bash
+npm install apteryxxyz/root-66
+```
 
 ## Test
 
-```cd ./node_modules/root-66 && npm test```
+```bash
+cd ./node_modules/root-66 && npm test && cd ../..
+```
 
 ## Usage
 
@@ -60,6 +72,9 @@ sixty.file.exports
 
 sixty.file.path + sixty.sep + sixty.file.name;
 // /home/Apteryx/node/project/index.js
+
+sixty.module
+// { name: 'root-66', version: '1.0.0', description: 'Root 66 is a...' }
 ```
 
 ## API
