@@ -55,6 +55,21 @@ declare const SixtySix: {
          */
         exports: Object;
     }
+
+    /**
+     * The name of this module.
+     */
+    name: String;
+
+    /**
+     * The description of this module.
+     */
+    description: String;
+
+    /**
+     * The currently installed version of this module.
+     */
+    version: String;
 }
 
 export = SixtySix;
